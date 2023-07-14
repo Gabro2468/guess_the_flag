@@ -1,6 +1,13 @@
+html{
+    height: 100%;
+}
+
 body{
+    display: flex;
+    flex-direction: column;
     font-family:'Times New Roman', Times, serif;
     margin: 0;
+    height: 100%;
 }
 
 /* styles for title section */
@@ -14,7 +21,7 @@ body{
     height: 8rem;
     background: linear-gradient(to right top, #e66465, #9198e5 ) ;
     color: azure;
-    box-shadow: 0 10px 15px 0 black;
+    box-shadow: 0 6px 15px 0 black;
 }
 
 #title h1{
@@ -31,4 +38,23 @@ body{
     font-weight: 300;
     margin: 0;
     color: black;
+}
+
+/* styles for board section */
+
+#board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+/* styles for footer section */
+
+footer{
+    width: 100%;
+    text-align: end;
+    font-style: italic;
+    background:linear-gradient(to right, rgb(202, 102, 56), rgb(138, 121, 214));
+    box-shadow: 0 -3px 15px 0 black;
 }
