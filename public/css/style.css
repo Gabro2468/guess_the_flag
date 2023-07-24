@@ -42,11 +42,61 @@ body{
 
 /* styles for board section */
 
-#board{
+#board-container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
+    padding: 5rem;
+}
+
+#board{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(3rem, 20rem));
+    grid-template-rows:  repeat(2, 1fr) ;
+    gap: 4rem;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.board-btn{
+    font-size: 4vw;
+    font-family: 'Amatic SC' ,fantasy;
+    font-weight: 700;
+    border: 2px solid black;
+    border-radius: 12px;
+    opacity: 0.85;
+}
+
+.board-btn:hover{
+    opacity: 1;
+    box-shadow: 8px 8px 18px 4px black;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+#europe{
+    background: linear-gradient(to bottom, rgba(6, 63, 250, 0.979), rgba(199, 172, 21, 0.877));
+}
+
+#africa{
+    background: linear-gradient(to bottom, green,yellow, red,rgba(71, 48, 21, 0.384));
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1px;
+}
+
+#asia{
+    background-color: red;
+    -webkit-text-stroke-color: gold;
+    -webkit-text-stroke-width: 1px;
+}
+
+#global{
+    border-radius: 100%;
+    background: radial-gradient(rgb(30, 182, 30)30%, rgb(14, 86, 153)60%);
+    -webkit-text-stroke-color: rgb(97, 68, 28);
+    -webkit-text-stroke-width: 1px;
 }
 
 /* styles for footer section */
