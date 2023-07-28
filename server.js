@@ -8,5 +8,5 @@ app.use('/guess_the_flag', express.static('public'))
 app.listen(8004)
 
 app.get('/guess_the_flag', (req, res) => {
-    res.render('index')
+    res.render('index',)
 })

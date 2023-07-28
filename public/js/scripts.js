@@ -146,7 +146,6 @@ asia.addEventListener("click", () => {
 
 global.addEventListener("click", () => {
     region = "global"
-    content.textContent = region
     let prefix = prefixes[Math.floor(Math.random() * prefixes.length)]
     console.log(prefix)
     flag.innerHTML = `<img src="https://flagsapi.com/${prefix}/flat/64.png">`
