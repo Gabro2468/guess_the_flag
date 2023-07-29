@@ -144,7 +144,7 @@ body{
     display: grid;
     grid-template-columns: repeat(2, minmax(3rem, 20rem));
     grid-template-rows:  repeat(2, 1fr) ;
-    gap: 4rem;
+    gap: 5rem;
     height: 100%;
     width: 100%;
     justify-content: center;
@@ -192,9 +192,16 @@ body{
 }
 
 
+#flag{
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    z-index: 1;
+}
+
 #flag img{
-    width: 7rem;
-    height: 6rem;
+    width: 128px;
+    height: 128px;
 }
 
 /* styles for footer section */

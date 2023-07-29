@@ -80,3 +80,31 @@ flag.innerHTML = `<img src="https://flagsapi.com/${prefix}/flat/64.png">`
 
 correctPosition = Math.floor(Math.random() * 4)
 
+switch(correctPosition){
+    case 1 :
+        choice1.textContent = countries[prefixes.indexOf(prefix)]
+        choice2.textContent = countries[Math.floor(Math.random() * countries.length)]
+        choice3.textContent = countries[Math.floor(Math.random() * countries.length)]
+        choice4.textContent = countries[Math.floor(Math.random() * countries.length)]
+        break
+    case 2 :
+        choice2.textContent = countries[prefixes.indexOf(prefix)]
+        choice1.textContent = countries[Math.floor(Math.random() * countries.length)]
+        choice3.textContent = countries[Math.floor(Math.random() * countries.length)]
+        choice4.textContent = countries[Math.floor(Math.random() * countries.length)]
+        break
+    case 3 :
+        choice3.textContent = countries[prefixes.indexOf(prefix)]
+        choice2.textContent = countries[Math.floor(Math.random() * countries.length)]
+        choice1.textContent = countries[Math.floor(Math.random() * countries.length)]
+        choice4.textContent = countries[Math.floor(Math.random() * countries.length)]
+        break
+    case 4 :
+        choice4.textContent = countries[prefixes.indexOf(prefix)]
+        choice2.textContent = countries[Math.floor(Math.random() * countries.length)]
+        choice3.textContent = countries[Math.floor(Math.random() * countries.length)]
+        choice1.textContent = countries[Math.floor(Math.random() * countries.length)]
+        break
+    default:
+        console.log("Error")
+}
