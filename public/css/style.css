@@ -10,18 +10,26 @@ body{
     height: 100%;
 }
 
-/* styles for title section */
+/* styles for top section */
+
+#top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    padding: 0 6rem;
+    background: linear-gradient(to right top, #e66465, #9198e5 ) ;
+    box-shadow: 0 6px 15px 0 black;
+}
 
 #title{
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 0 6rem;
-    height: 8rem;
     background: linear-gradient(to right top, #e66465, #9198e5 ) ;
-    color: azure;
-    box-shadow: 0 6px 15px 0 black;
+    color: azure;    
 }
 
 #title h1{
@@ -40,17 +48,99 @@ body{
     color: black;
 }
 
+#info{
+    display: inline-block;
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    background:transparent;
+    border: none;
+    border-radius: 100%;
+    font-size: 54px !important;
+    color: azure;
+    padding: 0;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 64
+}
+
+#info:hover{
+    font-size: 58px !important;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 64
+}
+
+.info_text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    visibility: hidden;
+    flex-wrap: wrap;
+    width: 10vw;
+    height:50vh;
+    font-family: 'Amatic SC', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    background: linear-gradient(to bottom, #272727, #8d8c8c );
+    color: azure;
+    border-radius: 8px;
+    padding: 1rem;
+    position: absolute;
+    z-index: 1;
+    top: 180%;
+    right: 50%;
+}
+
+.info_text h1{
+    font-size: 34px;
+    margin: 0;
+}
+
+.info_text p{
+    font-size: 26px;
+    margin: 0;
+}
+
+.show{
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+  
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
 /* styles for board section */
 
 #board-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex: 1;
     padding: 5rem;
 }
 
+#rules{
+    display: flex;
+    flex-direction: column;
+}
+
 #board{
+    flex: 1;
     display: grid;
     grid-template-columns: repeat(2, minmax(3rem, 20rem));
     grid-template-rows:  repeat(2, 1fr) ;
@@ -67,6 +157,8 @@ body{
     border: 2px solid black;
     border-radius: 12px;
     opacity: 0.85;
+    width: 100%;
+    height: 100%;
 }
 
 .board-btn:hover{
@@ -97,6 +189,12 @@ body{
     background: radial-gradient(rgb(30, 182, 30)30%, rgb(14, 86, 153)60%);
     -webkit-text-stroke-color: rgb(97, 68, 28);
     -webkit-text-stroke-width: 1px;
+}
+
+
+#flag img{
+    width: 7rem;
+    height: 6rem;
 }
 
 /* styles for footer section */
