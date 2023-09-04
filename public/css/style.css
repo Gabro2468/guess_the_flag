@@ -144,7 +144,6 @@ body {
     justify-content: space-around;
     align-items: center;
     flex: 1;
-    padding: 12rem;
 }
 
 #rules {
@@ -157,8 +156,6 @@ body {
     display: grid;
     grid-template-columns: repeat(2, minmax(10vw, 25vw));
     grid-template-rows: repeat(2, minmax(10vh, 25vh));
-    height: 100%;
-    width: 100%;
     gap: 4rem;
     justify-content: center;
     align-items: center;
