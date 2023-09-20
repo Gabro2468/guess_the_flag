@@ -156,7 +156,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, minmax(10vw, 25vw));
     grid-template-rows: repeat(2, minmax(10vh, 25vh));
-    gap: 4rem;
+    gap: 5.5rem;
     justify-content: center;
     align-items: center;
 }
