@@ -137,6 +137,16 @@ body {
     }
 }
 
+/* styles for score section */
+
+#score {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 5rem;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 0;
+}
+
 /* styles for board section */
 
 #board-container {
@@ -184,6 +194,8 @@ body {
     cursor: pointer;
 }
 
+/* styles for categories */
+
 #europe {
     background: linear-gradient(to bottom, rgba(6, 63, 250, 0.979), rgba(199, 172, 21, 0.877));
 }
@@ -207,6 +219,7 @@ body {
     -webkit-text-stroke-width: 1px;
 }
 
+/* styles for flag */
 
 #flag {
     position: absolute;

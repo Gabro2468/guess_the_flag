@@ -73,6 +73,8 @@ const choice2 = document.querySelector("#choice2")
 const choice3 = document.querySelector("#choice3")
 const choice4 = document.querySelector("#choice4")
 const flag = document.querySelector("#flag")
+const scoreNumber = document.querySelector("#score-number")
+let score = 0
     
 let round = (position) => {
     let prefix = prefixes[Math.floor(Math.random() * prefixes.length)]
@@ -119,6 +121,11 @@ choice1.addEventListener('click', () => {
     if(chosenPosition == correctPosition){
         correctPosition = Math.floor(Math.random() * 3) + 1
         round(correctPosition)
+        score += 1
+        scoreNumber.textContent = score
+    }
+    else{
+        window.location.href = 'http://localhost:8004/guess_the_flag/'
     }
 })
 
@@ -127,6 +134,11 @@ choice2.addEventListener('click', () => {
     if(chosenPosition == correctPosition){
         correctPosition = Math.floor(Math.random() * 3) + 1
         round(correctPosition)
+        score += 1
+        scoreNumber.textContent = score
+    }
+    else{
+        window.location.href = 'http://localhost:8004/guess_the_flag/'
     }
 })
 
@@ -135,6 +147,11 @@ choice3.addEventListener('click', () => {
     if(chosenPosition == correctPosition){
         correctPosition = Math.floor(Math.random() * 3) + 1
         round(correctPosition)
+        score += 1
+        scoreNumber.textContent = score
+    }
+    else{
+        window.location.href = 'http://localhost:8004/guess_the_flag/'
     }
 })
 
@@ -143,6 +160,11 @@ choice4.addEventListener('click', () => {
     if(chosenPosition == correctPosition){
         correctPosition = Math.floor(Math.random() * 3) + 1
         round(correctPosition)
+        score += 1
+        scoreNumber.textContent = score
+    }
+    else{
+        window.location.href = 'http://localhost:8004/guess_the_flag/'
     }
 })
 
